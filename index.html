@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jordan Laptop Advisor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <p class="eyebrow">Amman · 5-year outlook · Budget ≤ 900 JOD</p>
+      <h1>Choose a laptop that can grow with you.</h1>
+      <p class="intro">Balanced recommendations for iMSM study and running a small business.</p>
+    </header>
+
+    <section class="controls" aria-label="Find a laptop">
+      <label for="priority">Your main priority</label>
+      <select id="priority">
+        <option value="balanced">Balanced</option>
+        <option value="student">iMSM study</option>
+        <option value="business">Business owner</option>
+        <option value="value">Lowest price</option>
+      </select>
+      <button id="compare" type="button">Find my best fit</button>
+    </section>
+
+    <section id="recommendation" class="recommendation" aria-live="polite"></section>
+
+    <section>
+      <div class="section-heading">
+        <h2>Compare options</h2>
+        <p>Prices and availability should be verified with the retailer.</p>
+      </div>
+      <div id="laptops" class="cards"></div>
+    </section>
+
+    <footer>
+      <p><strong>Data notice:</strong> examples gathered from publicly available Jordanian retailer listings, not a live City Center Amman catalog. Confirm exact model, warranty, stock, and final JOD price before buying.</p>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
